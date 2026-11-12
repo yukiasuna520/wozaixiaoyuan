@@ -32,15 +32,9 @@ jobs:
 
       - name: 执行打卡
         env:
+          PYTHONUNBUFFERED: '1'
           school_name: ${{ secrets.school_name }}
           wzxy_username: ${{ secrets.wzxy_username }}
           wzxy_password: ${{ secrets.wzxy_password }}
-          window_start: ${{ secrets.window_start }}
-          window_end: ${{ secrets.window_end }}
           max_wait_min: '15'
-          receive_mail: ${{ secrets.receive_mail }}
-          mail_address: ${{ secrets.mail_address }}
-          mail_password: ${{ secrets.mail_password }}
-          mail_host: ${{ secrets.mail_host }}
-          sct_ftqq: ${{ secrets.sct_ftqq }}
-        run: python actionVersion.py
+        run: python -u actionVersion.py
