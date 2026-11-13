@@ -16,7 +16,7 @@ jobs:
       fail-fast: false        # 一个人失败不影响其他人
       matrix:
         # ⬇️ 加人只需在这下面加一行，并在 Settings → Environments 建同名环境
-        environment: [CONFIG_01, CONFIG_02, CONFIG_03, CONFIG_04, CONFIG_05]
+        environment: [CONFIG_01, CONFIG_02, CONFIG_03, CONFIG_04]
         # environment: [CONFIG_01, CONFIG_02, CONFIG_03, CONFIG_04]
     environment: ${{ matrix.environment }}
     steps:
