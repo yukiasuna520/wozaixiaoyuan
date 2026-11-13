@@ -17,7 +17,6 @@ jobs:
       matrix:
         # ⬇️ 加人只需在这下面加一行，并在 Settings → Environments 建同名环境
         environment: [CONFIG_01, CONFIG_02, CONFIG_03, CONFIG_04]
-        # environment: [CONFIG_01, CONFIG_02, CONFIG_03, CONFIG_04]
     environment: ${{ matrix.environment }}
     steps:
       - name: 检出代码
