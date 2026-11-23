@@ -1,0 +1,10 @@
+{
+  "school_name": "某某大学",
+  "wzxy_username": "学号或账号",
+  "wzxy_password": "密码",
+  "max_wait_min": "20",
+  "receive_mail": "receiver@example.com",
+  "mail_address": "sender@example.com",
+  "mail_password": "SMTP 授权码",
+  "mail_host": "smtp.example.com"
+}
